@@ -105,26 +105,117 @@ body {
 .right-part__title {
     font-weight: bold;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-.left-part__box {
-    background-color:hsl(252, 100%, 67%);
+.right-part__box {
     margin-bottom: 1rem;
     height: 46px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
 }
 
-.left-part__box__categorie {
+.right-part__box--reaction {
+    background: hsl(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%)
 }
 
-.left-part__box__categorie img {
+.right-part__box--memory {
+    background: hsl(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%)
+}
+
+.right-part__box--verbal {
+    background: hsl(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);
+}
+
+.right-part__box--visual {
+    background: hsl(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
+}
+
+.right-part__box__categorie {
+    margin-left: 0.5rem;
+    flex-grow: 1;
+}
+
+.right-part__box__categorie img {
     margin-right: 0.75rem;
 }
 
-.left-part__box__note {
-    font-weight: bold;
+.right-part__box__note__current {
+    color:black
+}
+
+.right-part__box__note {
+    color: #848485;
+}
+
+.right-part__button {
+    background-color: #303b59;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 2rem;
+    border-radius: 1.25rem;
+    margin: 1rem 0;
+}
+
+@media screen and (max-width:375px) {
+    
+    .attribution {
+        visibility: hidden;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 375px;
+        height: 100%;
+    }
+
+    .left-part {
+        width: 100%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .left-part__title {
+        margin: 1.25rem;
+    }
+
+    .left-part__circle {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto 1rem;
+    }
+
+    .left-part__comments {
+        margin-bottom: 0.5rem;
+    }
+
+    .left-part__explication {
+        margin-bottom: 1rem;
+    }
+
+    .right-part {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .right-part__title {
+        font-size: 1.2rem;
+    }
+    
+    .right-part__box {
+        margin-bottom: 0.75rem;
+    }
+
+    .right-part__button {
+        margin: 0.2rem 0;
+    }
 }
